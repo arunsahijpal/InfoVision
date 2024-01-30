@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  /* width: 1080px; */
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.logo-container {
+  margin-left: 35px;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 28px 15px;
+  color: black;
+}
+
+.contact-btn {
+  border: none;
+  padding: 0 28px 0 28px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}
+
+.hamburger{
+  display: none;
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+}
+
+
+.main-inner {
+  background-image: url("/images/Generative\ AI.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-inner .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-content {
+  background-color: #0e4ef9;
+  color: white;
+  padding: 40px;
+  width: 570px;
+  line-height: 1.4;
+  border-radius: 10px;
+  
+}
+
+.main-title {
+  margin-bottom: 18px;
+  font-size: 40px;
+}
+
+.description .container{
+   margin: 30px auto; 
+}
+
+.stats{
+  display: flex;
+  
+}
+
+.card{
+  display: flex;
+  width: 40%;
+  gap: 25px;
+}
+
+.stats>:nth-child(3){
+  padding-left: 40px;
+}
+
+
+.card h2{
+  font-size: 40px;
+}
+
+.card p{
+  font-size: 18px;
+}
+
+.icon{
+  width: 70px;
+}
+
+.description-content{
+  margin: 30px 0;
+}
+
+.description-content-title{
+  font-size: 50px;
+}
+
+.story{
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #c42229;
+  transition: 0.5s;
+}
+
+.story:hover{
+  color: #c42229;
+}
+
+.social-media{
+  padding: 20px 0;
+  background-color: #1f1f1f;
+
+}
+
+.social-media .container{
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+}
+
+.social-media p{
+  color: white;
+}
+
+.footer-content{
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+}
+
+.footer-content .container{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-sections{
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-sections h3{
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer-sections p{
+  color: #888;
+  font-size: 14px;
+}
+
+.footer-sections a{
+  text-decoration: none;
+  color: #888;
+  font-size: 14px;
+}
+
+.vertical-rule{
+  background-color: #888;
+  width: 1px;
+  opacity: 0.4;
+}
+
+.horizontal-rule{
+  background-color: #888;
+  /* height: 1px; */
+  width: 100%;
+  opacity: 0.6;
+}
+
+.policy{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.policy-navbar{
+  display: flex;
+  gap: 20px;
+}
+.policy a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+@media screen and (max-width:1400px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .container {
+    max-width: 960px;
+  }
+  nav a {
+    padding: 10px 5px;
+  }
+  .contact-btn{
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .container{
+    max-width: 720px;
+  }
+  .hamburger{
+    display: block;
+  }
+  
+  .navbar{
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    width: 100%;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .stats{
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container{
+    max-width: 540px;
+  }
+  .stats{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+  }
+  .stats>:nth-child(3){
+    padding-left: 0;
+  }
+  .footer-content .container{
+    flex-direction: column;
+  }
+  .footer-sections{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .container{
+    width: 100%;
+  }
+}
